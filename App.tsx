@@ -1,3 +1,6 @@
+import { TextInput } from '@components/Base/Input';
+import Button from '@components/Base/Button';
+import { SIZES } from '@constants/theme';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -11,9 +14,8 @@ const App: React.FC<{}> = ({
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+    paddingLeft: SIZES.padding,
+    paddingRight: SIZES.padding
   },
 });
 

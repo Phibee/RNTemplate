@@ -15,6 +15,7 @@
     "@emotion/react": "^11.7.1",
     "babel-plugin-module-resolve": "^0.0.14",
     "babel-plugin-module-resolver": "^4.1.0",
+    "color": "^4.2.0",
     "react": "17.0.2",
     "react-native": "0.67.1"
   },
