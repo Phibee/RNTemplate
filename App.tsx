@@ -8,6 +8,9 @@ const App: React.FC<{}> = ({
 }) => {
     return (
     <View style={styles.container}>
+        <TextInput label="Username" placeholder='Enter your username' borderColorType="primary" />
+        <TextInput label="Password" placeholder='Enter your password' borderColorType="primary" type="password" onChangeText={e => console.log(e)}/>
+        <Button label='Submit' color='white' textStyle={{color: 'white'}} align="center"/>
     </View>
   );
 };
