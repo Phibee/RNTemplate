@@ -1,5 +1,7 @@
-import { Dimensions } from "react-native";
+import {  Dimensions, PixelRatio } from "react-native";
 const { width, height } = Dimensions.get("window");
+
+const FONT_SCALE = PixelRatio.getFontScale();
 
 const white = '#fff';
 const black = '#111';
@@ -36,15 +38,15 @@ export const SIZES = {
     padding: 10,
 
     // font sizes
-    h1: 30,
-    h2: 22,
-    h3: 16,
-    h4: 14,
-    body1: 30,
-    body2: 22,
-    body3: 16,
-    body4: 14,
-    body5: 12,
+    h1: 30 / FONT_SCALE,
+    h2: 22 / FONT_SCALE,
+    h3: 16 / FONT_SCALE,
+    h4: 14 / FONT_SCALE,
+    body1: 30 / FONT_SCALE,
+    body2: 22 / FONT_SCALE,
+    body3: 16 / FONT_SCALE,
+    body4: 14 / FONT_SCALE,
+    body5: 12 / FONT_SCALE,
 
     // app dimensions
     width,
