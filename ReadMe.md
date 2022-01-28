@@ -1,5 +1,5 @@
-# RNTemplate 
-
+# RNTemplate
+```React Native template with Configurations```
 
 ### Create new React Native Project with Typescript 
 
@@ -17,7 +17,7 @@ _Install this package:_<br/>
 **yarn add babel-plugin-module-resolver**
 
 **tsconfig.json**<br/>
-<pre>
+```
 {
   "compilerOptions": {
     "baseUrl": ".", 
@@ -28,10 +28,10 @@ _Install this package:_<br/>
     }
   }
 }
-</pre>
+```
 
 **babel.config**<br/>
-<pre>
+```
 plugins: [
     [
        'babel-plugin-module-resolver',
@@ -45,7 +45,7 @@ plugins: [
        }
     ]
 ]
-</pre>
+```
 
 run **yarn tsc** to type-check your new TypeScript files
 
@@ -64,30 +64,30 @@ ___
 > Cannot read properties of undefined (reading 'transformFile')     at Bundler.transformFile .....
 
 **Fix:**
-<pre>
+```
 npm install -g react-native-git-upgrade
 
 npx react-native upgrade
-</pre>
+```
 ___
 **Issue 2:** 
 > Execution failed for task ':app:installDebug'.
 > java.util.concurrent.ExecutionException: com.android.builder.testing.api.DeviceException: com.android.ddmlib.InstallException: Unknown failure: cmd: Can't find service: package
 
 **Fix:**
-<pre>
+```
 chmod 755 android/gradlew 
 
 inside your app root folder then run 
 
 react-native run-android 
-</pre>
+```
 ___
 **Issue 3:**
 > Error message "error:0308010C:digital envelope routines::unsupported"
 
 **Fix:**
-<pre>
+```
 nvm install --lts
 nvm use --lts
-</pre>
+```
